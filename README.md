@@ -15,32 +15,31 @@ GET /user/{id} - Получение информации о пользовате
 - **URL**: `/register`
 - **Method**: `POST`
 - **Data Params**:
-  ```json
   {
     "name": "Lena",
     "email": "lalla@example.com",
     "password": "password123"
   }
 - **Success Response**:
--Code: 201 Created
--Content:
-  ```json
+- Code: 201 Created
+- Content:
+
 {
 "success": true
 }
 - **Error Response**:
 - Code: 400 Bad Request
 - Content:
- ```json
+
 {
 "error": "Invalid JSON input"
 }
-- 
+ 
 ### Update User
 - **URL**: /user/{id}
 - **Method**: PUT
 - **Data Params**:
-```json
+
 {
 "name": "New Name",
 "email": "newemail@example.com",
@@ -49,7 +48,7 @@ GET /user/{id} - Получение информации о пользовате
 - **Success Response**:
 - Code: 200 OK
 - Content:
- ```json
+
 {
 "success": "User updated successfully"
 }
@@ -57,13 +56,13 @@ GET /user/{id} - Получение информации о пользовате
 - **Error Response**:
 - Code: 400 Bad Request
 - Content:
- ```json
+
 {
 "error": "Invalid JSON input"
 }
 - Code: 404 Not Found
 - Content:
-```json
+
 {
 "error": "User not found"
 }
@@ -73,14 +72,14 @@ Method: DELETE
 Success Response:
 Code: 200 OK
 Content:
-```json
+
 {
 "success": "User deleted successfully"
 }
 Error Response:
 Code: 404 Not Found
 Content:
- ```json
+
 {
 "error": "User not found"
 }
@@ -90,7 +89,7 @@ Content:
 - **Success Response**:
 - Code: 200 OK
 - Content:
-```json
+
 {
 "user": {
 "id": 1,
@@ -101,7 +100,7 @@ Content:
 - **Error Response**:
 - Code: 404 Not Found
 - Content:
- ```json
+
 {
 "error": "User not found"
 }
@@ -109,7 +108,7 @@ Content:
 - **URL**: /login
 - **Method**: POST
 - **Data Params**:
- ```json
+
 {
 "email": "lalla@example.com",
 "password": "password123"
@@ -117,7 +116,6 @@ Content:
 - **Success Response**:
 - Code: 200 OK
 - Content:
- ```json
 {
 "user": {
 "id": 1,
@@ -128,7 +126,7 @@ Content:
 - **Error Response**:
 - Code: 401 Unauthorized
 - Content:
- ```json
+
 {
 "error": "Invalid credentials"
 }
